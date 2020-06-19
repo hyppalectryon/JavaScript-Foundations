@@ -37,8 +37,8 @@ Hint #2: you'll need to use the `math` object for parts of this calculation!
 
 When your math is correct, monthlyRate will equal 1073.64
 */
-let n1 = Math.pow(monthlyInterestRate+1, N);
-let numerator = monthlyInterestRate * p * n1;
+let n1 = Math.pow(monthlyInterestRate+1, 360);
+let numerator = monthlyInterestRate * principal * n1;
 let denominator = n1 -1;
 let monthlyRate = numerator/denominator;
 
@@ -49,7 +49,9 @@ let monthlyRate = numerator/denominator;
 
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
-
+function mortgageCalculator() {
+  return name+", your monthly rate is "+monthlyRate;
+}
 
 
 
