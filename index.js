@@ -50,6 +50,16 @@ let monthlyRate = numerator/denominator;
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 function mortgageCalculator() {
+  let principal = 200000;
+  let interestRate = 0.05;
+  let years = 30;
+  let name = "Daniel";
+  let monthlyInterestRate = interestRate/12;
+  let periods = years*12; // months
+  let n1 = Math.pow(monthlyInterestRate+1, 360);
+  let numerator = monthlyInterestRate * principal * n1;
+  let denominator = n1 -1;
+  let monthlyRate = numerator/denominator;
   return name+", your monthly rate is "+monthlyRate;
 }
 
@@ -64,7 +74,7 @@ mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 */
 
 function mortgageCalculator(P, I, N) {
-  
+
 }
 
 
