@@ -17,7 +17,7 @@ let name = "Daniel"
 (2) Create another variable called `periods` and give it the value of years*12.
 */
 let monthlyInterestRate = interestRate/12;
-let periods = years*12;
+let periods = years*12; // months
 
 
 
@@ -63,8 +63,9 @@ For example,
 mortgageCalculator(200000, 0.05, 30); <-- should return 1,073.64
 */
 
-
-
+function mortgageCalculator(P, I, N) {
+  
+}
 
 
 // 🏡 Task 5: Conditionals
